@@ -1,31 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <circuit>
   <version>2</version>
-  <attributes/>
+  <attributes>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>10</int>
+    </entry>
+  </attributes>
   <visualElements>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>wrR</string>
+          <string>DIN</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
         </entry>
       </elementAttributes>
-      <pos x="140" y="740"/>
+      <pos x="140" y="500"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>DEST</string>
+          <string>SRC1</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>5</int>
         </entry>
       </elementAttributes>
-      <pos x="140" y="660"/>
+      <pos x="140" y="320"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -42,14 +57,14 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>DIN</string>
+          <string>SRC2</string>
         </entry>
         <entry>
           <string>Bits</string>
-          <int>32</int>
+          <int>5</int>
         </entry>
       </elementAttributes>
-      <pos x="140" y="500"/>
+      <pos x="140" y="380"/>
     </visualElement>
     <visualElement>
       <elementName>Register</elementName>
@@ -96,14 +111,18 @@
       <pos x="840" y="40"/>
     </visualElement>
     <visualElement>
-      <elementName>Clock</elementName>
+      <elementName>In</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>CLOCK</string>
+          <string>DEST</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>5</int>
         </entry>
       </elementAttributes>
-      <pos x="140" y="580"/>
+      <pos x="140" y="660"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -158,28 +177,20 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>SRC2</string>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>5</int>
+          <string>wrR</string>
         </entry>
       </elementAttributes>
-      <pos x="140" y="380"/>
+      <pos x="140" y="740"/>
     </visualElement>
     <visualElement>
-      <elementName>In</elementName>
+      <elementName>Clock</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>SRC1</string>
-        </entry>
-        <entry>
-          <string>Bits</string>
-          <int>5</int>
+          <string>CLOCK</string>
         </entry>
       </elementAttributes>
-      <pos x="140" y="320"/>
+      <pos x="140" y="580"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
